@@ -7,4 +7,9 @@ torchaudio==2.0.2+cu118
 
 pandas
 matplotlib
-transformers 
+transformers
+tqdm
+evaluate
+nltk
+rouge_score
+scikit-learn
