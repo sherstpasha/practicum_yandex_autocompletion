@@ -1,17 +1,26 @@
 --index-url https://pypi.org/simple
 --extra-index-url https://download.pytorch.org/whl/cu118
 
-numpy>=1.19.0,<2.0
-torch==2.0.1+cu118
-torchvision==0.15.2+cu118
-torchaudio==2.0.2+cu118
+numpy>=1.24,<2.3
+pandas>=2.0
+matplotlib>=3.8
+scipy>=1.12
 tensorboard
 
-pandas
-matplotlib
-transformers
-tqdm
-evaluate
-nltk
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118
+torchaudio==2.7.1+cu118
+
+transformers>=4.54,<5
+tokenizers>=0.21.0,<0.22
+accelerate>=0.27
+safetensors>=0.5
+datasets>=2.19
+evaluate>=0.4.0
+
+nltk>=3.9
 rouge_score
-scikit-learn
+scikit-learn>=1.4
+tqdm>=4.66
+
+ipywidgets>=8.0
