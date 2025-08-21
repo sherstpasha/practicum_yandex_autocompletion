@@ -19,7 +19,7 @@ class RNNAutocompletion(nn.Module):
             embedding_dim=dim,
             padding_idx=pad_token_id,
         )
-
+        self.embeddings_norm = nn.LayerNorm(dim)
         self.rnn = nn.LSTM(
             input_size=dim,
             hidden_size=dim,
@@ -27,18 +27,20 @@ class RNNAutocompletion(nn.Module):
             batch_first=True,
             dropout=dropout if num_layers > 1 else 0.0,
         )
-
+        self.norm = nn.LayerNorm(dim)
         self.linear = nn.Linear(in_features=dim, out_features=vocab_size, bias=False)
         self.linear.weight = self.embeddings.weight
 
     def forward(self, input_ids, lengths):
 
         out = self.embeddings(input_ids)
+        out = self.embeddings_norm(out) 
         out, _ = self.rnn(out)
+        out = self.norm(out)
 
         batch_idx = torch.arange(out.size(0), device=out.device)
         last_h = out[batch_idx, lengths - 1, :]
-
+        
         out = self.linear(last_h)
         return out
 
