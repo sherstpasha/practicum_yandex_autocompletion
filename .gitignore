@@ -19,6 +19,7 @@ MANIFEST
 .DS_Store
 *.so
 *.csv
+*.json
 
 # IDE stuff
 .idea

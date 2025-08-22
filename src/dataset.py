@@ -1,39 +1,32 @@
+from typing import List
+from itertools import chain
+
 import torch
 from torch.utils.data import Dataset
 
-import pandas as pd
-
 
 class NextTokenDataset(Dataset):
-    def __init__(self, data: pd.DataFrame, pad_token: int, max_length: int = 16):
-        self.input_ids = data["input_ids"]
-        self.pad_token = pad_token
-        self.max_length = max_length
+    def __init__(
+        self, input_ids, chunk_length: int = 32, stride: int = 32, offset: int = 0
+    ):
+        super().__init__()
+        self.chunk_length = int(chunk_length)
+        self.stride = int(stride)
 
-        self.index_map = []
-        for row_idx, ids in enumerate(self.input_ids):
-            n = len(ids)
-            for k in range(1, n):
-                self.index_map.append((row_idx, k))
+        self.data = torch.tensor(list(chain.from_iterable(input_ids)), dtype=torch.long)
+
+        max_start = self.data.numel() - (self.chunk_length + 1)
+        off = int(offset) % max(1, self.stride)
+        self.starts = torch.arange(off, max_start + 1, self.stride, dtype=torch.long)
 
     def __len__(self):
-        return len(self.index_map)
+        return int(self.starts.numel())
 
-    def __getitem__(self, idx):
-        row_idx, k = self.index_map[idx]
-        ids = self.input_ids[row_idx]
+    def __getitem__(self, i: int):
+        start = int(self.starts[i])
+        end = start + self.chunk_length
 
-        ctx = ids[max(0, k - self.max_length) : k]
-        y = ids[k]
+        x = self.data[start:end]
+        y = self.data[start + 1 : end + 1]
 
-        ctx_len = len(ctx)
-
-        pad_len = self.max_length - ctx_len
-        if pad_len > 0:
-            ctx = ctx + [self.pad_token] * pad_len
-
-        return {
-            "input_ids": torch.tensor(ctx, dtype=torch.long),
-            "labels": torch.tensor(y, dtype=torch.long),
-            "length": torch.tensor(ctx_len, dtype=torch.long),
-        }
+        return {"input_ids": x, "labels": y}
