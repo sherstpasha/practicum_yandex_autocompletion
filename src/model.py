@@ -45,32 +45,40 @@ class RNNAutocompletion(nn.Module):
 
         return logits, (h, c)
 
-    # @torch.no_grad()
-    # def generate(self, start_tokens: torch.Tensor, max_tokens: int):
+    @torch.no_grad()
+    def generate(self, start_tokens: torch.Tensor, max_new_tokens: int) -> torch.Tensor:
+        device = start_tokens.device
+        B, K = start_tokens.shape
 
-    #     device = start_tokens.device
+        x = self.embeddings(start_tokens)
+        x = self.embeddings_norm(x)
+        _, (h, c) = self.rnn(x)
 
-    #     generated = start_tokens.clone().to(device)
-    #     finished = torch.zeros(generated.size(0), dtype=torch.bool, device=device)
-    #     new_tokens = []
+        lengths = (start_tokens != self.pad_token_id).sum(dim=1).clamp(min=1)
+        batch_idx = torch.arange(B, device=device)
+        prev = start_tokens[batch_idx, lengths - 1]
 
-    #     for _ in range(max_tokens):
-    #         lengths = (
-    #             (generated != self.pad_token_id).sum(dim=1).to(torch.long).clamp_min(1)
-    #         )
+        finished = torch.zeros(B, dtype=torch.bool, device=device)
+        out_tokens = []
 
-    #         logits = self(generated, lengths)
+        for _ in range(max_new_tokens):
+            emb = self.embeddings(prev).unsqueeze(1)
+            emb = self.embeddings_norm(emb)
+            o, (h, c) = self.rnn(emb, (h, c))
+            o = self.norm(o)
+            logits = self.linear(o.squeeze(1))
 
-    #         next_id = torch.argmax(logits, dim=-1)
-    #         next_id = torch.where(
-    #             finished, torch.full_like(next_id, self.pad_token_id), next_id
-    #         )
+            next_id = torch.argmax(logits, dim=-1)
+            out_tokens.append(next_id.unsqueeze(1))
 
-    #         new_tokens.append(next_id.unsqueeze(1))
-    #         generated = torch.cat([generated, next_id.unsqueeze(1)], dim=1)
+            finished |= next_id.eq(self.eos_token_id)
+            prev = torch.where(
+                finished, torch.full_like(next_id, self.eos_token_id), next_id
+            )
 
-    #         finished |= next_id.eq(self.pad_token_id)
-    #         if finished.all():
-    #             break
+            if finished.all():
+                break
 
-    #     return torch.cat(new_tokens, dim=1)
+        if not out_tokens:
+            return torch.empty(B, 0, dtype=start_tokens.dtype, device=device)
+        return torch.cat(out_tokens, dim=1)
