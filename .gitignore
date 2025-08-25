@@ -6,7 +6,6 @@ dist/
 .pytest_cache/
 __pycache__/
 env/
-exp/
 *.egg-info/
 
 # files to ignore

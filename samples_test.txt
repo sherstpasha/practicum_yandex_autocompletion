@@ -1,0 +1,415 @@
+rnn samples
+
+K=1
+need |  a partner in crime
+need |  to get my hair done
+
+did |  you do much on the designs i think we would have heard by now if we'd won
+did |  you get a new phone
+
+up |  with the larks this morning already been out and about. you cant beat the west coast of scotland on a beautiful sunny morning.
+up | .
+
+ hungry | . going to eat. catch up with you guys later amp 4 people who are hurt by my sardonic quotes why are you waiting, hit me back
+ hungry | 
+
+that | 's my loverr lt 3
+that | 's what i'm doing.
+
+
+K=7
+i really have no sense of direction | . it makes me feel so stupid whenever i get lost.
+i really have no sense of direction | .
+
+at the mall with my seester | , getting our other seester a birthday present
+at the mall with my seester | 
+
+i'm happy it happened for you | .now take it as far as you can
+i'm happy it happened for you | 're not going to be able to make it to the show tonight
+
+oh and he's coming over tonight |  to meet the rents omgz.
+oh and he's coming over tonight | 
+
+at gabby's grad i can | 't believe it's been a year since i graduated
+at gabby's grad i can | 't wait to see you
+
+
+K=21
+breakfast homemeade banana nut bread w harvest margarine trans fat free , black chai tea, |  hot, straight lots of confusion all over else
+breakfast homemeade banana nut bread w harvest margarine trans fat free , black chai tea, |  and a good friend
+
+i saw you and nearly had a heart attack but i think i coverd it pretty well lol, i |  was gonna say hi, but i was dead scared x
+i saw you and nearly had a heart attack but i think i coverd it pretty well lol, i | 'm soo tired
+
+after waking at 3am to get into the city for the early show, i'm dead tired. still |  need to get sink cleared before turning in, though
+after waking at 3am to get into the city for the early show, i'm dead tired. still |  awake.
+
+think its his twin omg im going to see aiden aarrgghh. oh and i |  get to see you again too
+think its his twin omg im going to see aiden aarrgghh. oh and i |  miss him so much
+
+was a tough decision but i'm going with the purple dress for my reunion. which is in 4 hours | .
+was a tough decision but i'm going with the purple dress for my reunion. which is in 4 hours | .
+
+
+K=28
+hey sweetie, i hope yur feeling better. i've never had the flu. i would clonazepam it up and |  sleep it off xoxox
+hey sweetie, i hope yur feeling better. i've never had the flu. i would clonazepam it up and |  i'm not sure what to do.
+
+i don't think nestle makes butterfinger crisp anymore that's bummin me out. this poser reese's crispy crunchy bar |  is unsatisfying.
+i don't think nestle makes butterfinger crisp anymore that's bummin me out. this poser reese's crispy crunchy bar | .
+
+yupyup, finna get spiffed up for this black and white party me and are going to . lets get get get |  itt follow
+yupyup, finna get spiffed up for this black and white party me and are going to . lets get get get | tin ready for work
+
+i was on 50mg of paxil amp 150mg of wellbutrin when things were really bad in grad school. things r starting |  2get bad again
+i was on 50mg of paxil amp 150mg of wellbutrin when things were really bad in grad school. things r starting |  now.
+
+maybe you should invite the rest of the band to sleep too haha. i think they're so tired of your show well. goodninght |  tom
+maybe you should invite the rest of the band to sleep too haha. i think they're so tired of your show well. goodninght | 
+
+distilgpt2 samples
+
+K=1
+hey |  u can do it u r much more capable than anyone else around on doing it call me anytime you need to talk
+hey |  The New York Times has been reporting that the FBI has been investigating the death of a man who was shot in the head by a police officer in the Bronx.
+
+what |  were they doing
+what |  The New York Times has been reporting on the Trump administration’s decision to fire former FBI Director James Comey.
+
+
+
+
+
+
+
+
+
+
+mus | covy ducks are good eating. taste like roast beef. i used to control the population at night at my old apartment complex.
+mus |  The first time I saw a video of a man wearing a black shirt with a black shirt with a black shirt with a black shirt with a black shirt with a
+
+got |  my ticket for the teen choice awards woohoo i'm so stoked
+got |  The first time I saw a video of a man in a wheelchair, I was shocked. He was wearing a wheelchair, and he was wearing a wheelchair. He
+
+i |  don't know what to do with my 4 domains yet. hehehe.
+i |  The New York Times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+K=7
+missed our flight been waiting since |  4pm. i'm never guessing my flight time again
+missed our flight been waiting since |  the end of the year.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i'm siick and i have |  to write my religion essays
+i'm siick and i have |  to say that i am a little bit more than a little bit more than a little bit more than a little bit more than a little bit more than a little
+
+we are moving, but it is |  taking longer than we thought. we have had lots of problems with blogger
+we are moving, but it is |  not going to be easy.”
+
+ew i cannot find my osap |  info or my birth certificate curse you moving business
+ew i cannot find my osap | od.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+omg corn nuts, now i |  have the craving, thanks
+omg corn nuts, now i |  think i can get a better taste of the corn.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+K=21
+just cut into last years rare breed free range air dried ham. seriously bloody good, thankfully there's plenty |  more curing
+just cut into last years rare breed free range air dried ham. seriously bloody good, thankfully there's plenty |  of good stuff out there.
+
+
+The only thing that's missing is the ham.
+The ham is a very good, very good, very good
+
+aww, not good, think we're all feeling like that atm i'm not too bad though |  thankyou
+aww, not good, think we're all feeling like that atm i'm not too bad though | .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i'm prolly gonna rock dresses all summer b c they're the only thing that fits right now. |  and they show off my boobs
+i'm prolly gonna rock dresses all summer b c they're the only thing that fits right now. | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i think after watching replay of last night's bgt that aidan davis is going to just clinch |  it but it'll be close between 4 5 acts i think
+i think after watching replay of last night's bgt that aidan davis is going to just clinch |  the win.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+you have baker's square i'm envious. we ate there in california and it was wonderful | . perkins is the quot pie of record quot here, but
+you have baker's square i'm envious. we ate there in california and it was wonderful | . i was so happy to have a good meal. i was so happy to have a good meal. i was so happy to have a good meal. i
+
+
+K=28
+missing and her sewing kit, mangoes not euphemistic , cooking skillz and general awesomeness. bring on a rum filled j | uly
+missing and her sewing kit, mangoes not euphemistic , cooking skillz and general awesomeness. bring on a rum filled j | alapeno, a jalapeno, a jalapeno, a jalapeno, a jalapeno, a jalap
+
+in johor bahru, malaysia family house. wtf the taxi in lakin still refused to use taximeter and |  asked me to take premiere taxi
+in johor bahru, malaysia family house. wtf the taxi in lakin still refused to use taximeter and |  the taxi driver refused to pay the taxi driver's fee.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+thanks for the video ah the memories btw, 2 guys talking to richard at 3 33 are from the cosmic tea party. did you |  meet them
+thanks for the video ah the memories btw, 2 guys talking to richard at 3 33 are from the cosmic tea party. did you |  know that the tea party is a group of people who are not religious?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i was up early vomming are you in berlin yet i spent a good few hours yesterday googling mike patton's |  marital status
+i was up early vomming are you in berlin yet i spent a good few hours yesterday googling mike patton's |  and i got a good look at the pics. i'm not sure if i'm going to be able to get a look at the pics but i'm sure
+
+im enjoying all the sites the internet gives me , ive got like. 3 tabs each on all of 3 windows . so cool and so |  buzy .
+im enjoying all the sites the internet gives me , ive got like. 3 tabs each on all of 3 windows . so cool and so |  cool.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
