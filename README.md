@@ -1,5 +1,7 @@
 # Autocompletion RNN + distilgpt2 baseline
 
+![Demo](demo.gif)
+
 ## Установка
 
 **venv:**
