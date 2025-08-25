@@ -1,6 +1,7 @@
 # Autocompletion RNN + distilgpt2 baseline
 
 ![Demo](demo.gif)
+*Запуск демо: `python app_gradio.py` (после установки зависимостей и наличия весов `exp/exp1/weights/best.pt`).*
 
 ## Установка
 
